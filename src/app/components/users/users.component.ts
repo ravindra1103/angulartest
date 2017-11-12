@@ -16,40 +16,6 @@ export class UsersComponent implements OnInit {
   }
   ngOnInit() {
     this.getAllUsers();
-    /*this.getUser(1);
-    let updatedUser = {
-      id: "0",
-      name: "name new",
-      surname: "surname new",
-      birthDate: "24-8-1981",
-      phone: "634523125",
-      city: "Wroclaw",
-      street: "Mydlana",
-      number: "1"
-    };
-    this.updateUser(updatedUser);
-    let updatedUsers = [{
-      id: "0",
-      name: "name new",
-      surname: "surname new",
-      birthDate: "24-8-1981",
-      phone: "634523125",
-      city: "Wroclaw",
-      street: "Mydlana",
-      number: "1"
-    },
-    {
-      id: "1",
-      name: "name1 new",
-      surname: "surname1 new",
-      birthDate: "28-9-1983",
-      phone: "812312312",
-      city: "Warsaw",
-      street: "Domaniewska",
-      number: "2"
-    }];
-    this.updateUser(updatedUsers);
-    this.removeUser(1);*/
   }
 
   private getAllUsers = () => {
