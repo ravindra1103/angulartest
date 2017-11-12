@@ -1,0 +1,32 @@
+<h1>
+    {{title}}
+</h1>
+<table style="width:100%">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Number</th>
+        <th>Date of Birth</th>
+        <th>Phone</th>
+        <th>Street</th>
+        <th>City</th>
+    </tr>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.surname}}</td>
+            <td>{{user.number}}</td>
+            <td>{{user.birthDate}}</td>
+            <td>{{user.phone}}</td>
+            <td>{{user.street}}</td>
+            <td>{{user.city}}</td>
+        </tr>
+    </tbody>
+</table>
+<br/>
+<br/>
+<button (click)="onHandleSingleUpdate()">Update One</button>
+<button (click)="onHandleMultipleUpdate()">Update Two Items</button>
+<button (click)="onHandleRemove()">Remove</button>
